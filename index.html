@@ -1,0 +1,54 @@
+<!-- mouhatech.com -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Mame Diarra Sall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-4 overflow-hidden">
+
+    <canvas id="starsCanvas" class="stars"></canvas>
+
+    <main class="relative z-10 w-full max-w-2xl text-center space-y-6">
+
+        <div class="animate__animated animate__fadeInDown">
+            <h1 class="text-5xl md:text-7xl font-love text-rose-500 mb-2 glow-effect">Mame Diarra Sall</h1>
+            <p class="text-gray-400 tracking-widest uppercase text-sm">Une pensée, un battement, une évidence</p>
+        </div>
+
+        <div class="py-10 floating">
+            <div class="text-rose-600 text-8xl heart-beat inline-block">❤️</div>
+        </div>
+
+        <div class="glass p-8 rounded-2xl shadow-2xl animate__animated animate__fadeInUp">
+            <p id="dynamic-text" class="text-xl md:text-2xl italic leading-relaxed min-h-[100px] break-words text-left"
+                style="white-space: pre-wrap;">
+            </p>
+
+            <div class="mt-8 flex justify-center gap-4">
+                <button onclick="changeMessage()"
+                    class="bg-rose-700 text-white px-6 py-2 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg button-glow">
+                    Une autre pensée
+                </button>
+                <button id="musicBtn" onclick="toggleMusic()"
+                    class="bg-green-600 text-white px-4 py-2 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg">
+                    <i class="fa-solid fa-play mr-1"></i> Musique
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
