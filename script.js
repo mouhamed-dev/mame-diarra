@@ -26,19 +26,19 @@ function toggleMusic() {
     if (!musicStarted) {
         audio.play().then(() => {
             musicStarted = true;
-            musicBtn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> En Lecture';
+            musicBtn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> Lecture';
             musicBtn.classList.remove('bg-gray-700');
             musicBtn.classList.add('bg-green-600');
         }).catch(e => console.log('Audio play failed:', e));
     } else {
         if (audio.paused) {
             audio.play();
-            musicBtn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> En Lecture';
+            musicBtn.innerHTML = '<i class="fa-solid fa-pause mr-1"></i> Lecture';
             musicBtn.classList.remove('bg-rose-600');
             musicBtn.classList.add('bg-green-600');
         } else {
             audio.pause();
-            musicBtn.innerHTML = '<i class="fa-solid fa-play mr-1"></i> En Pause';
+            musicBtn.innerHTML = '<i class="fa-solid fa-play mr-1"></i> Pause';
             musicBtn.classList.remove('bg-green-600');
             musicBtn.classList.add('bg-green-600');
         }
