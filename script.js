@@ -126,7 +126,7 @@ document.addEventListener('click', function (e) {
 function createHeart(x, y) {
   const container = document.getElementById('heart-container');
   const heart = document.createElement('span');
-  heart.className = 'heart hidden md:block';
+  heart.className = 'heart';
   heart.innerText = '❤️';
 
   // décalage aléatoire
