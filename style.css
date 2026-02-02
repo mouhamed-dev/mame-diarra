@@ -47,7 +47,7 @@ body {
 
 .heart-beat {
     animation: heartBeat 1.5s infinite;
-    filter: drop-shadow(0 0 20px rgba(244, 63, 94, 0.5));
+    filter: drop-shadow(0 0 30px rgba(244, 63, 94, 0.5));
 }
 
 @keyframes heartBeat {
