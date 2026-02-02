@@ -115,3 +115,28 @@ window.addEventListener('resize', initStars);
 initStars();
 drawStars();
 changeMessage();
+
+
+
+document.addEventListener('click', function (e) {
+  if (e.target.closest('a, button, input, textarea, select, label')) return;
+  createHeart(e.clientX, e.clientY);
+});
+
+function createHeart(x, y) {
+  const container = document.getElementById('heart-container');
+  const heart = document.createElement('span');
+  heart.className = 'heart hidden md:block';
+  heart.innerText = '❤️';
+
+  // décalage aléatoire
+  const offsetX = Math.random() * 40 - 20;
+  const offsetY = Math.random() * 20 - 10;
+
+  heart.style.left = (x + offsetX) + 'px';
+  heart.style.top = (y + offsetY) + 'px';
+
+  container.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 4000);
+}
