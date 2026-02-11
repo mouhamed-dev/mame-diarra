@@ -5,7 +5,7 @@ const messages = [
     "Le monde est plus lumineux depuis que tu en fais partie.",
     "Si les étoiles pouvaient parler, elles te diraient à quel point tu es unique.",
     "Ton sourire est ma source d'énergie préférée.",
-    "Plus qu'un nom, Mame Diarra Sall est ma plus belle pensée quotidienne.",
+    "Plus qu'un nom, Mame Diarra est ma plus belle pensée quotidienne.",
     "Il n'y a pas assez de mots en français ou en wolof pour décrire ce que je ressens.",
     "Dans l'univers infini de mon existence, tu es l'étoile qui guide mon chemin.",
     "Ton amour est la force qui transforme mes tempêtes en océans calmes.",
